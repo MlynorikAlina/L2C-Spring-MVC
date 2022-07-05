@@ -12,6 +12,7 @@
 </head>
 <body>
     <h2>Hello world!</h2>
-    <h4>${param.studentName}</h4>
+    <h4>${name}</h4>
+    <a href="/spring/">Home</a>
 </body>
 </html>

@@ -11,7 +11,7 @@
     <title>Form</title>
 </head>
 <body>
-<form action="form-processing" method="get">
+<form action="${formProcessing}" method="get">
     <input type="text" name="studentName" placeholder="What is your name?">
     <input type="submit">
 </form>
