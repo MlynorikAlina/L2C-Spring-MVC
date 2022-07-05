@@ -3,6 +3,6 @@
     <title>Menu</title>
 </head>
 <body>
-This is menu!
+<a href="show-form">hello world</a>
 </body>
 </html>
