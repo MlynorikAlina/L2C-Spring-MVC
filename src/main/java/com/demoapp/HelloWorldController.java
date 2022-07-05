@@ -3,6 +3,7 @@ package com.demoapp;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -23,13 +24,13 @@ public class HelloWorldController {
         return "hello-world-form";
     }
     @RequestMapping("/form-processing")
-    public String formProcessing(HttpServletRequest request, Model model){
-        model.addAttribute("name", request.getParameter("studentName"));
+    public String formProcessing(@RequestParam("studentName") String name, Model model){
+        model.addAttribute("name", name);
         return "hello-world-page";
     }
     @RequestMapping("/form-processing-uppercase")
-    public String formProcessingUppercase(HttpServletRequest request, Model model){
-        model.addAttribute("name", request.getParameter("studentName").toUpperCase());
+    public String formProcessingUppercase(@RequestParam("studentName") String name, Model model){
+        model.addAttribute("name", name.toUpperCase());
         return "hello-world-page";
     }
 }
