@@ -6,19 +6,23 @@ public class Student {
     private String firstName;
     private String lastName;
     private String country;
+    private String operatingSystem;
+    private String[] programingLanguages;
 
-    private final LinkedHashMap<String,String> countryOptions = new LinkedHashMap<>();
-
-    {
-        countryOptions.put("BR","Brazil");
-        countryOptions.put("FR","France");
-        countryOptions.put("US","USA");
-        countryOptions.put("RU","Russia");
-        countryOptions.put("CA","Canada");
+    public String getOperatingSystem() {
+        return operatingSystem;
     }
 
-    public LinkedHashMap<String, String> getCountryOptions() {
-        return countryOptions;
+    public void setOperatingSystem(String operatingSystem) {
+        this.operatingSystem = operatingSystem;
+    }
+
+    public String[] getProgramingLanguages() {
+        return programingLanguages;
+    }
+
+    public void setProgramingLanguages(String[] programingLanguages) {
+        this.programingLanguages = programingLanguages;
     }
 
     public String getCountry() {

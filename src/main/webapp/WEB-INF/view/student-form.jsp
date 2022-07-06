@@ -19,8 +19,14 @@
     <br><br>
     Country:
     <form:select path="country">
-        <form:options items="${student.countryOptions}"/>
+        <form:options items="${countryOptions}"/>
     </form:select>
+    <br><br>
+    Operating system:
+    <form:radiobuttons path="operatingSystem" items="${operationSystem}"/>
+    <br><br>
+    Programing language:
+    <form:checkboxes path="programingLanguages" items="${programingLanguage}"/>
     <br><br>
     <input type="submit" value="submit">
 </form:form>
