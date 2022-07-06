@@ -12,6 +12,9 @@
 </head>
 <body>
     <h3>Hello |${customer.lastName}| |${customer.firstName}|!</h3>
+    Free passes: ${customer.freePasses}
+    <br>
+    Postal code: ${customer.postalCode}
     <a href="/spring/">Home</a>
 </body>
 </html>
