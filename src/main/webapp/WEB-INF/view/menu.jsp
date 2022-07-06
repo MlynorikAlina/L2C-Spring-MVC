@@ -9,5 +9,6 @@
 <a href="show-form">hello world</a><br>
 <a href="make-uppercase">hello world uppercase</a><br>
 <a href="student/show-form">student confirmation</a><br>
+<a href="customer/show-form">customer confirmation</a><br>
 </body>
 </html>
