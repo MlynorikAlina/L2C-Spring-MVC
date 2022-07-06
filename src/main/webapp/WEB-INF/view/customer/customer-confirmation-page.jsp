@@ -15,6 +15,7 @@
     Free passes: ${customer.freePasses}
     <br>
     Postal code: ${customer.postalCode}
+    Course code: ${customer.courseCode}
     <a href="/spring/">Home</a>
 </body>
 </html>
