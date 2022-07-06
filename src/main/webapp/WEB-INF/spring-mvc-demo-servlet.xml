@@ -29,4 +29,9 @@
         <property value=".jsp" name="suffix"/>
     </bean>
 
+    <bean id="messageSource"
+          class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basenames" value="prop.messages"/>
+    </bean>
+
 </beans>
